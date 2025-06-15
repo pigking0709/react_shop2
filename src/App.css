@@ -1,0 +1,37 @@
+header{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height:60px;
+  border-bottom: 1px solid blueviolet;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+  display:flex;
+  gap:1rem;
+}
+
+.App_loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vw;
+}
+
+.loading-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading-container h1 {
+  font-size: 48px;
+}
+.loading-container p {
+  font-size: 24px;
+}

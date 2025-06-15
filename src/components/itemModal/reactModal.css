@@ -1,0 +1,74 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 검정 배경 */
+  z-index: 999; /* 다른 요소보다 위에 위치 */
+}
+
+/* 모달창: 중앙 정렬 + 흰색 배경 */
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* 고정 크기 */
+  width: 400px;
+  max-height: 80vh; /* 뷰포트의 80%까지만 높이 허용 */
+  overflow-y: auto;  /* 내용이 넘치면 세로 스크롤 생성 */
+
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.modal-content b{
+    color: #007bff;
+    display: block;
+    text-align: right;
+    font-size: 1.25rem;
+}
+.modal-content img {
+  width: 100%;       /* 모달 너비에 맞게 */
+  max-height: 200px; /* 이미지 최대 높이 제한 */
+  object-fit: contain; /* 이미지 비율 유지하며 맞춤 */
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.modal-content button{
+    padding: 10px 20px;
+    margin: 10px 10px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.modal-content > div{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-content button:first-child{
+    background-color: rgb(150, 224, 39);
+    color: white;
+}
+.modal-content button:first-child:hover{
+    background-color: green;
+}
+
+
+.modal-content button:last-child{
+    background-color: red;
+    color: white;
+}
+.modal-content button:last-child:hover{
+    background-color: #c82333;
+}
